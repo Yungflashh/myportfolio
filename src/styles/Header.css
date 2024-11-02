@@ -1,0 +1,92 @@
+/* header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 16px;
+
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+#menuBar{
+    display: none;
+} */
+
+/* Header.css */
+
+.header-container {
+    background-color: #2c3e50; /* Dark background for the header */
+    padding: 20px; /* Padding around the header */
+    position: relative; /* Allow absolute positioning for children if needed */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    /* display: flex; */
+  }
+  
+  .header {
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Space between title, links, and menu icon */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .header-title {
+    color: #ecf0f1; /* Light text color */
+    font-size: 18px; /* Font size for the title */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .links {
+    display: flex; /* Horizontal layout for nav items */
+    gap: 20px; /* Space between nav items */
+  }
+  
+  .nav-item {
+    color: #ecf0f1; /* Light text color */
+    font-weight: 500; /* Medium font weight */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s; /* Smooth transition for color */
+  }
+  
+  .nav-item:hover {
+    color: #3498db; /* Change color on hover */
+  }
+  
+  .menu-icon {
+    color: #ecf0f1; /* Color for the menu icon */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+  
+  .menu-icon:hover {
+    color: #3498db; /* Change color on hover */
+  }
+  #menuBar{
+    display: none;
+}
+
+  
+  
+
+  
+
+@media (max-width:900px){
+
+    h1{
+        font-size: 14px;
+        font-weight: 600;
+    }
+   .links{
+    display: none;
+   }
+
+   #menuBar{
+    display: block;
+   }
+}
