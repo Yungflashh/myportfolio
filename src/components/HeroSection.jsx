@@ -5,6 +5,12 @@ import TypewriterEffect from "./TypeWriter"
 import myImg from "../assets/myImg.jpg"
 
 import mycv from "../assets/my_cv.pdf"
+import { FaGithub,FaLinkedin } from "react-icons/fa";
+import { MdOutlineAlternateEmail } from "react-icons/md";
+
+
+
+
 
 
 
@@ -13,8 +19,8 @@ const HeroSection = () => {
         const handleDownload = () => {
             // Replace 'path/to/your/file.pdf' with the actual path to your PDF
             const link = document.createElement('a');
-            link.href = "../assets/my_cv.pdf"
-            link.download = 'my_cv.pdf'; // Optional: Specify the name for the downloaded file
+            link.href = {mycv}
+            link.download = 'Oluwakayode David Adenusi Cv'; // Optional: Specify the name for the downloaded file
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -28,6 +34,15 @@ const HeroSection = () => {
             <TypewriterEffect />
 
         <button onClick={handleDownload} className="buttonStyle"> Download CV </button>
+
+            <div className="icons">
+            <FaGithub size={40}/>
+            <FaLinkedin size={40}/>
+            <MdOutlineAlternateEmail size={40}/>
+
+            </div>
+        
+
         </div>
 
         <div className="imageDiv">

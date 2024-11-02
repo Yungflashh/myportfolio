@@ -1,0 +1,15 @@
+body{
+    background: url(../../assets/bg-2.avif);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+   
+}
+
+@media (max-width:900px){
+    body{
+        height: 3000px;
+        
+    }
+}
