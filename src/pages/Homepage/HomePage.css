@@ -3,13 +3,13 @@ body{
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
    
 }
 
 @media (max-width:900px){
     body{
-        height: 3000px;
+        /* height: 3000px; */
         
     }
 }
