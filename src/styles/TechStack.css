@@ -1,18 +1,40 @@
-.container{
+.containerDiv{
     /* color: black; */
-    text-align: center;
+    /* text-align: center; */
+    margin-top: 100px;
+    /* border: 2px solid yellow; */
 }
 
 .stackIcons{
     font-size: 70px;
     display: flex;
     justify-content: space-around;
-    gap: 20px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+h2{
+    margin-bottom: 100px;
+}
+
+.techCard{
+    background-color: #000; /* Black background */
+            color: #fff; /* White text */
+            width: 100px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px #FF014F;
+            text-align: center;
+
+            p {
+                font-size: 16px;
+                margin: 10px 0;
+            }
 }
 
 
 @media (max-width:900px){
-    .container{
+    .containerDiv{
         /* color: black; */
         text-align: center;
     }
