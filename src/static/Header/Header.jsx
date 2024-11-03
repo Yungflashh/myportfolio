@@ -19,7 +19,7 @@ const Header = () => {
    
     <div className="header-container">
     <header className="header">
-      <h1 className="header-title">ADENUSI OLUWAKAYODE DAVID</h1>
+      <h1 className="header-title"> <span>A</span>DENUSI <span>O</span>LUWAKAYODE <span>D</span>AVID</h1>
       <div className="links">
         <nav className="nav-item">About Me</nav>
         <nav className="nav-item">Skills</nav>

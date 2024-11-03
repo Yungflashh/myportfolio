@@ -1,6 +1,8 @@
 import HeroSection from "../../components/HeroSection"
+import Services from "../../components/Services"
 import TechStack from "../../components/TechStack"
 import Header from "../../static/Header/Header"
+import About from "../AboutPage/About"
 import "./HomePage.css"
 
 const HomePage = () => {
@@ -8,7 +10,9 @@ const HomePage = () => {
     <div>
         <Header/>
         <HeroSection />
-        <TechStack />
+        <About />
+        <Services />
+        {/* <TechStack /> */}
         
         </div>
     

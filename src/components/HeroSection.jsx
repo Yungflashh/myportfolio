@@ -2,11 +2,12 @@ import "../styles/HeroSection.css"
 
 import TypewriterEffect from "./TypeWriter"
 
-import myImg from "../assets/myImg.jpg"
+import myImg from "../assets/myImg.png"
 
 import mycv from "../assets/my_cv.pdf"
 import { FaGithub,FaLinkedin } from "react-icons/fa";
 import { MdOutlineAlternateEmail } from "react-icons/md";
+import oval from "../assets/oval.svg"
 
 
 
@@ -46,8 +47,9 @@ const HeroSection = () => {
         </div>
 
         <div className="imageDiv">
-       
-            <img src={myImg} alt="my-image" />
+        
+            <img id="oval" src={oval} alt="my-image" />
+            <img id="myImg" src={myImg} alt=""  />
         </div>
 
     </div>

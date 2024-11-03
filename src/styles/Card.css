@@ -1,0 +1,24 @@
+
+.card {
+    background: black; /* Card background */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px white; /* Soft shadow */
+    text-align: center; /* Center text */
+    padding: 30px; /* Padding inside the card */
+    width: 300px; /* Fixed width for card */
+}
+
+.icon {
+    font-size: 50px; /* Size of the icon */
+    color: #ff4081; /* Icon color */
+    margin-bottom: 15px; /* Space below the icon */
+}
+
+h2 {
+    margin: 10px 0; /* Margin for heading */
+}
+
+p {
+    
+    line-height: 1.5; /* Spacing between lines */
+}

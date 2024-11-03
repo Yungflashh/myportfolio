@@ -8,7 +8,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 
 const TechStack = () => {
   return (
-    <div className="container">
+    <div className="containerDiv">
         <h2>Technologies</h2>
 
         <div className="stackIcons">

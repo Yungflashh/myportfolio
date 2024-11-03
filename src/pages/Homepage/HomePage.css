@@ -1,6 +1,6 @@
 body{
-    background: url(../../assets/bg-2.avif);
-    color: white;
+    background: #000000;
+    color:white;
     background-repeat: no-repeat;
     background-size: cover;
     /* height: 100vh; */
