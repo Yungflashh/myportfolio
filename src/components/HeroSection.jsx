@@ -1,4 +1,7 @@
 import "../styles/HeroSection.css"
+import { useEffect, useRef } from 'react';
+import { gsap } from "gsap/gsap-core";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import TypewriterEffect from "./TypeWriter"
 
@@ -17,6 +20,18 @@ import oval from "../assets/oval.svg"
 
 const HeroSection = () => {
 
+    // const boxRef = useRef(null);
+
+    // useEffect(() => {
+    //     // gsap.to is used to animate the element referenced by boxRef
+    //     gsap.to(boxRef.current, {
+    //       x: 100,       // Move the box 300px to the right
+    //       duration: 2,   // Animation duration
+    //       ease: "power2.out", // Easing function for smooth animation
+    //     });
+    //   }, []); // Empty dependency array ensures this runs only once, on mount
+
+
         const handleDownload = () => {
             // Replace 'path/to/your/file.pdf' with the actual path to your PDF
             const link = document.createElement('a');
@@ -27,7 +42,8 @@ const HeroSection = () => {
             document.body.removeChild(link);
         };
   return (
-    <div className="HeroSection">
+    // ref={boxRef}
+    <div  className="HeroSection">
 
         <div className="HeroText">
             <h2>HI, I am</h2>

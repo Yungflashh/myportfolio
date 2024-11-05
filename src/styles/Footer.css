@@ -1,0 +1,13 @@
+.Footer{
+    background-color: rgb(30,30,30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+@media (max-width:900px){
+    .Footer p{
+           text-align: center;
+    }
+}

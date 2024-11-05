@@ -1,3 +1,4 @@
+import Contact from "../../components/Contact"
 import HeroSection from "../../components/HeroSection"
 import Services from "../../components/Services"
 import TechStack from "../../components/TechStack"
@@ -9,12 +10,13 @@ import "./HomePage.css"
 const HomePage = () => {
   return (
     <div>
-        <Header/>
+        
         <HeroSection />
         <About />
         <Services />
         <TechStack />
         <Works />
+        <Contact />
         
         </div>
     
