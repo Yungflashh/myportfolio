@@ -1,6 +1,6 @@
 import "../styles/HeroSection.css"
-import { useEffect, useRef } from 'react';
-import { gsap } from "gsap/gsap-core";
+// import { useEffect, useRef } from 'react';
+// import { gsap } from "gsap/gsap-core";
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import TypewriterEffect from "./TypeWriter"
@@ -9,7 +9,7 @@ import myImg from "../assets/myImg.png"
 
 import mycv from "../assets/my_cv.pdf"
 import { FaGithub,FaLinkedin } from "react-icons/fa";
-import { MdOutlineAlternateEmail } from "react-icons/md";
+import { MdOutgoingMail} from "react-icons/md";
 import oval from "../assets/oval.svg"
 
 
@@ -53,9 +53,9 @@ const HeroSection = () => {
         <button onClick={handleDownload} className="buttonStyle"> Download CV </button>
 
             <div className="icons">
-            <FaGithub size={40}/>
-            <FaLinkedin size={40}/>
-            <MdOutlineAlternateEmail size={40}/>
+            <a href="https://github.com/Yungflashh" target="_blank"><FaGithub size={40}/> </a> 
+             <a href="www.linkedin.com/in/kayodeadenusi" target="_blank"><FaLinkedin size={40} /></a> 
+            <a href="mailto:kayskidadenusi29@gmail.com" target="_blank" ><MdOutgoingMail size={40} /></a> 
 
             </div>
         

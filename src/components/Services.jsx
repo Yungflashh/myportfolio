@@ -10,7 +10,7 @@ import Code from '../assets/Code.svg'
 const Services = () => {
   return (
 
-    <>
+    <div id="services">
      <h2>My Services</h2>
     <div className="servicesDiv">
        
@@ -20,7 +20,7 @@ const Services = () => {
         <Card icon={Code} title={"Personalized Guidance"} text={"Together, we’ll assess your skills and interests to create a tailored roadmap for your tech journey."} />
     </div>
 
-    </>
+    </div>
   )
 }
 

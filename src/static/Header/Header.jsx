@@ -2,8 +2,16 @@ import { useState } from "react";
 import "../../styles/Header.css"
 import { IoMdMenu } from "react-icons/io";
 import NavBar from "./NavBar";
+// import About from "../../pages/AboutPage/About";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  
+  const scrollToAbout = (idpassed) => {
+    const aboutSection = document.getElementById(idpassed);
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+  
 
   const [navBar, setnavBar] = useState(false)
 
@@ -17,14 +25,17 @@ const Header = () => {
   return (
 
    
-    <div className="header-container">
+    <div className="header-container" id="header">
     <header className="header">
       <h1 className="header-title"> <span>A</span>DENUSI <span>O</span>LUWAKAYODE <span>D</span>AVID</h1>
       <div className="links">
-        <nav className="nav-item">About Me</nav>
-        <nav className="nav-item">Skills</nav>
-        <nav className="nav-item">Portfolio</nav>
-        <nav className="nav-item">Contact Me</nav>
+
+          <Link to={"#"} > <nav className="nav-item" onClick={() => scrollToAbout("about")}>About Me</nav>  </Link>
+
+         
+        <Link to={"#"}> <nav className="nav-item"onClick={() => scrollToAbout("services")} >Services</nav> </Link>
+        <Link to={"#"}><nav className="nav-item" onClick={() => scrollToAbout("myWorks")}>My Works</nav> </Link> 
+         <Link to={"#"}> <nav className="nav-item" onClick={() => scrollToAbout("contact")} > Contact Me</nav> </Link>
 
         
       </div>

@@ -1,6 +1,6 @@
 import "../styles/WorksCard.css"
 
-const WorksCard = ({image,headerText,desc, btnTitle,btnTitle2, stacks}) => {
+const WorksCard = ({image,headerText,desc, btnTitle,btnTitle2, stacks, codeBase, liveSite}) => {
   return (
 
 
@@ -16,8 +16,8 @@ const WorksCard = ({image,headerText,desc, btnTitle,btnTitle2, stacks}) => {
                     <p>{desc}</p>
 
                     <p id="stack">{stacks}</p>
-                    <button className="btn">{btnTitle}</button>
-                    <button className="btn">{btnTitle2}</button>
+                  <a href={codeBase} target="_blank"><button className="btn">{btnTitle}</button></a>  
+                  <a href={liveSite} target="_blank"><button className="btn">{btnTitle2}</button></a>  
 
                    
 

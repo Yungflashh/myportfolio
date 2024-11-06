@@ -5,7 +5,7 @@ import { LuCheckCircle } from "react-icons/lu";
 
 const About = () => {
   return (
-    <div className="container">
+    <div className="container" id="about">
             <div className="aboutimageDiv">
                     <img src={myImg2} alt="" />
 
