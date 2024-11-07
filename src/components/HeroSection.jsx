@@ -4,6 +4,7 @@ import "../styles/HeroSection.css"
 // import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import TypewriterEffect from "./TypeWriter"
+import { useState } from "react"
 
 import myImg from "../assets/myImg.png"
 
@@ -20,29 +21,37 @@ import oval from "../assets/oval.svg"
 
 const HeroSection = () => {
 
-    // const boxRef = useRef(null);
-
-    // useEffect(() => {
-    //     // gsap.to is used to animate the element referenced by boxRef
-    //     gsap.to(boxRef.current, {
-    //       x: 100,       // Move the box 300px to the right
-    //       duration: 2,   // Animation duration
-    //       ease: "power2.out", // Easing function for smooth animation
-    //     });
-    //   }, []); // Empty dependency array ensures this runs only once, on mount
+   
 
 
-        const handleDownload = () => {
-            // Replace 'path/to/your/file.pdf' with the actual path to your PDF
-            const link = document.createElement('a');
-            link.href = Adenusi_cv
-            link.download = 'Oluwakayode David Adenusi Cv'; // Optional: Specify the name for the downloaded file
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        };
+    
+    
+    
+      const [isLoading, setIsLoading] = useState(false);
+    
+      const handleDownload = () => {
+        // Add the "loading" class for the animation
+        setIsLoading(true);
+    
+        // Simulate download delay with a timeout (e.g., 2 seconds)
+        setTimeout(() => {
+          // Your download logic here, e.g., triggering the file download
+          const link = document.createElement('a');
+          link.href = Adenusi_cv;  // Update with your actual CV file path
+          link.download = 'Adenusi_Kayode_cv.pdf';
+          link.click();
+    
+          // Reset the loading state after download
+          setIsLoading(false);
+        }, 2000); // Adjust timeout duration as per animation duration
+      };
+    
+   
+    
+    
+  
   return (
-    // ref={boxRef}
+   
     <div  className="HeroSection">
 
         <div className="HeroText">
@@ -50,11 +59,17 @@ const HeroSection = () => {
             <p>Adenusi Oluwakayode David</p>
             <TypewriterEffect />
 
-        <button id="downloadbtn" onClick={handleDownload} className="buttonStyle"> Download CV <FaDownload /> </button>
+            <button 
+          id="downloadbtn" 
+          onClick={handleDownload} 
+          className={`buttonStyle ${isLoading ? 'loading' : ''}`}
+        >
+          {isLoading ? 'Downloading...' : 'Download CV'} <FaDownload />
+        </button>
 
             <div className="icons">
             <a href="https://github.com/Yungflashh" target="_blank"><FaGithub size={40}/> </a> 
-             <a href="www.linkedin.com/in/kayodeadenusi" target="_blank"><FaLinkedin size={40} /></a> 
+             <a href="https://linkedin.com/in/kayodeadenusi" target="_blank"><FaLinkedin size={40} /></a> 
             <a href="mailto:kayskidadenusi29@gmail.com" target="_blank" ><MdOutgoingMail size={40} /></a> 
 
             </div>
