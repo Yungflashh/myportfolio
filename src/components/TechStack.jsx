@@ -14,25 +14,39 @@ const TechStack = () => {
         <div className="stackIcons">
 
             <div className="techCard">
+
             <SiTypescript />
             <p>TypeScript</p>
             </div>
+
             <div className="techCard">
+
             < SiStyledcomponents />
             <p>Styled components</p>
             </div>
+
+
             <div className="techCard">
+
             <FaJs />
             <p>Javascript</p>
             </div>
+
+
             <div className="techCard">
+
             <FaReact />
             <p>React</p>
             </div>
+
+
             <div className="techCard">
+              
             <FaBootstrap />
             <p>Bootstrap</p>
             </div>
+
+
             <div className="techCard">
             <RiTailwindCssFill />
             <p>Tailwind</p>

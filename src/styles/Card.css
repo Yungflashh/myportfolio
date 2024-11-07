@@ -1,24 +1,22 @@
-
 .card {
-    background: black; /* Card background */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 20px white; /* Soft shadow */
-    text-align: center; /* Center text */
-    padding: 30px; /* Padding inside the card */
-    width: 300px; /* Fixed width for card */
+    background: black;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px white;
+    text-align: center;
+    padding: 30px;
+    width: 300px;
 }
 
 .icon {
-    font-size: 50px; /* Size of the icon */
-    color: #ff4081; /* Icon color */
-    margin-bottom: 15px; /* Space below the icon */
+    font-size: 50px;
+    color: #ff4081;
+    margin-bottom: 15px;
 }
 
 h2 {
-    margin: 10px 0; /* Margin for heading */
+    margin: 10px 0;
 }
 
 p {
-    
-    line-height: 1.5; /* Spacing between lines */
+    line-height: 1.5;
 }

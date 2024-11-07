@@ -4,7 +4,6 @@ import Global from '../assets/Globe.svg'
 import Phone from '../assets/Phone.svg'
 import Users from '../assets/Users.svg'
 import Code from '../assets/Code.svg'
-// import { FaHandHoldingHeart } from "react-icons/fa";
 
 
 const Services = () => {

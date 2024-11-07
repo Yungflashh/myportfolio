@@ -1,85 +1,79 @@
 .header-container {
-    background-color: #2c3e50; /* Dark background for the header */
-    padding: 20px; /* Padding around the header */
-    position: relative; /* Allow absolute positioning for children if needed */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    /* display: flex; */
-  }
-  
-  .header {
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Space between title, links, and menu icon */
-    align-items: center; /* Center items vertically */
-  }
-  
-  .header-title {
-    color: #ecf0f1; /* Light text color */
-    font-size: 18px; /* Font size for the title */
-    margin: 0; /* Remove default margin */
-    font-family: "Dosis", sans-serif;
-    font-style: italic;
+  background-color: #2c3e50;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
-    span{
-        color:#FF014F
-    }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  color: #ecf0f1;
+  font-size: 18px;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+  font-style: italic;
+}
+
+.header-title span {
+  color: #FF014F;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-item {
+  color: #ecf0f1;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item:hover {
+  color: #3498db;
+}
+
+.menu-icon {
+  color: #ecf0f1;
+  cursor: pointer;
+}
+
+.menu-icon:hover {
+  color: #3498db;
+}
+
+#menuBar {
+  display: none;
+}
+
+.hero-imageDiv {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border: 5px solid #FF014F;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  height: 400px;
+}
+
+@media (max-width: 900px) {
+  h1 {
+      font-size: 14px;
+      font-weight: 600;
   }
   
   .links {
-    display: flex; /* Horizontal layout for nav items */
-    gap: 20px; /* Space between nav items */
+      display: none;
   }
-  
-  .nav-item {
-    color: #ecf0f1; /* Light text color */
-    font-weight: 500; /* Medium font weight */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: color 0.3s; /* Smooth transition for color */
+
+  #menuBar {
+      display: block;
   }
-  
-  .nav-item:hover {
-    color: #3498db; /* Change color on hover */
-  }
-  
-  .menu-icon {
-    color: #ecf0f1; /* Color for the menu icon */
-    cursor: pointer; /* Pointer cursor on hover */
-  }
-  
-  .menu-icon:hover {
-    color: #3498db; /* Change color on hover */
-  }
-  #menuBar{
-    display: none;
-}
-
-.hero-imageDiv{
-  position: relative;
-  display: inline-block;
-  padding: 10px; /* Space between image and border */
-  border: 5px solid #FF014F; /* Border color */
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
-  overflow: hidden; /* Clip children */
-  height: 400px;
-
-}
-
-  
-  
-
-  
-
-@media (max-width:900px){
-
-    h1{
-        font-size: 14px;
-        font-weight: 600;
-    }
-   .links{
-    display: none;
-   }
-
-   #menuBar{
-    display: block;
-   }
 }
