@@ -2,6 +2,7 @@
     display: flex;
     /* border: 2px solid green; */
     justify-content: space-around;
+    padding: 10px;
 }
 
 p{
