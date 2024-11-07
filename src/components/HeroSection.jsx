@@ -7,7 +7,7 @@ import TypewriterEffect from "./TypeWriter"
 
 import myImg from "../assets/myImg.png"
 
-import mycv from "../assets/my_cv.pdf"
+import Adenusi_cv from "../assets/my_cv.pdf"
 import { FaGithub,FaLinkedin } from "react-icons/fa";
 import { MdOutgoingMail} from "react-icons/md";
 import oval from "../assets/oval.svg"
@@ -35,7 +35,7 @@ const HeroSection = () => {
         const handleDownload = () => {
             // Replace 'path/to/your/file.pdf' with the actual path to your PDF
             const link = document.createElement('a');
-            link.href = mycv
+            link.href = Adenusi_cv
             link.download = 'Oluwakayode David Adenusi Cv'; // Optional: Specify the name for the downloaded file
             document.body.appendChild(link);
             link.click();
