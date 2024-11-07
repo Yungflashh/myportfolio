@@ -8,7 +8,7 @@ import TypewriterEffect from "./TypeWriter"
 import myImg from "../assets/myImg.png"
 
 import Adenusi_cv from "../assets/my_cv.pdf"
-import { FaGithub,FaLinkedin } from "react-icons/fa";
+import { FaGithub,FaLinkedin ,FaDownload } from "react-icons/fa";
 import { MdOutgoingMail} from "react-icons/md";
 import oval from "../assets/oval.svg"
 
@@ -50,7 +50,7 @@ const HeroSection = () => {
             <p>Adenusi Oluwakayode David</p>
             <TypewriterEffect />
 
-        <button onClick={handleDownload} className="buttonStyle"> Download CV </button>
+        <button id="downloadbtn" onClick={handleDownload} className="buttonStyle"> Download CV <FaDownload /> </button>
 
             <div className="icons">
             <a href="https://github.com/Yungflashh" target="_blank"><FaGithub size={40}/> </a> 
