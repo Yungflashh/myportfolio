@@ -4,6 +4,9 @@ import { IoMdMenu } from "react-icons/io";
 import NavBar from "./NavBar";
 // import About from "../../pages/AboutPage/About";
 import { Link } from "react-router-dom";
+import { myValue } from "../../context/NavState";
+import { useContext } from "react"
+
 
 const Header = () => {
   
@@ -12,8 +15,8 @@ const Header = () => {
     aboutSection?.scrollIntoView({ behavior: 'smooth' });
   };
   
-
-  const [navBar, setnavBar] = useState(false)
+  const boolean = useContext(myValue)
+   const [navBar, setnavBar] = useState(boolean)
 
   function toggleBar (){
     
@@ -43,7 +46,7 @@ const Header = () => {
     </header>
   
 
-        {navBar && <NavBar />} {/* Render NavBar conditionally */}
+        {navBar && <NavBar />} 
     </div>
   )
 }

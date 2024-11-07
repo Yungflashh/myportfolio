@@ -35,7 +35,7 @@ const HeroSection = () => {
         const handleDownload = () => {
             // Replace 'path/to/your/file.pdf' with the actual path to your PDF
             const link = document.createElement('a');
-            link.href = {mycv}
+            link.href = mycv
             link.download = 'Oluwakayode David Adenusi Cv'; // Optional: Specify the name for the downloaded file
             document.body.appendChild(link);
             link.click();
