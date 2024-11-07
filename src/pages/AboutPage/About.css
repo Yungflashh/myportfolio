@@ -57,4 +57,8 @@ span{
     .aboutimageDiv{
         display: none;
     }
+
+    p{
+        font-size: 14px;
+    }
 }
