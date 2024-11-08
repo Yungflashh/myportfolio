@@ -1,5 +1,7 @@
 import "../styles/Card.css"
 
+// Add more cards later in the future
+
 const Card = ({icon, title, text}) => {
   return (
     <div className="card">
