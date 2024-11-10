@@ -16,9 +16,8 @@ const Contact = () => {
           <p className="iconColor" ><IoShieldCheckmark /> Professional Software Developer</p>
           <p className="iconColor" ><IoShieldCheckmark /> Technical Mentor</p>
           <p className="iconColor" ><IoShieldCheckmark /> Project Advisor</p>
-          <p className="iconColor" ><IoShieldCheckmark /> Leadership- Spirit</p>
+          <p className="iconColor" ><IoShieldCheckmark /> Leadership - Spirit</p>
 
-         
 
           </div>
 
