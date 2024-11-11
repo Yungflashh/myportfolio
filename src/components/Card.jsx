@@ -1,6 +1,6 @@
 import "../styles/Card.css"
 
-
+// 
 
 const Card = ({icon, title, text}) => {
   return (
