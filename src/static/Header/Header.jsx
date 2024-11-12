@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../../styles/Header.css"
 import { IoMdMenu } from "react-icons/io";
 import NavBar from "./NavBar";
-// import About from "../../pages/AboutPage/About";
+// import About from "../../pages/AboutPage/About"
 import { Link } from "react-router-dom";
 import { myValue } from "../../context/NavState";
 import { useContext } from "react"
