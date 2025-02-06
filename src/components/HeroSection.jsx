@@ -139,7 +139,7 @@ const HeroSection = () => {
     <div className="HeroSection">
       <div className="HeroText">
         <h2>HI, I am</h2>
-        <p>Adenusi Oluwakayode David</p>
+        <p id="name">Adenusi Oluwakayode David</p>
         <div className="TypewriterEffect">
           <TypewriterEffect />
         </div>

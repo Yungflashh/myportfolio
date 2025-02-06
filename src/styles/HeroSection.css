@@ -6,6 +6,10 @@
     justify-content: space-around;
 }
 
+
+#name{
+    font-size: 30px;
+}
 .HeroText{
     /* border: 2px solid red; */
     margin: 100px 60px;
