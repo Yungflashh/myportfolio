@@ -2,6 +2,7 @@ import WorksCard from "./WorksCard"
 import coolors from "../assets/coolors.png"
 import pickup from "../assets/pickup.png"
 import Nike from "../assets/nike.png"
+import giftPixel from "../assets/giftpixel.png"
 import wordGame from "../assets/wordGame.png"
 import country from "../assets/country.png"
 import synTech from "../assets/syntech.png"
@@ -12,6 +13,10 @@ const Works = () => {
                 <h2>Explore My Works</h2>
 
                 
+                <div>
+                    <WorksCard image={giftPixel} headerText={"Gift Pixel"} desc={"GiftPixel is a website that specializes in enhancing the gift-giving experience through innovative technology solutions. They offer a platform that enables users to create personalized gift messages, which can be delivered to recipients via various channels, including email and vendor-specific applications. This approach allows gift givers to add a personal touch to their presents, making the gifting process more meaningful and engaging"} stacks={"Stacks used :Nodejs, ExpressJs, MongoDb, React, styled-components, tailwind, javascript, Html, Css"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={"https://github.com/Yungflashh/giftpixel.git"} liveSite={"https://giftpixel.vercel.app/"}/>
+
+                </div>
                 <div>
                     <WorksCard image={Nike} headerText={"Nike E-commerce site"} desc={"This site is more than just an online store—it’s a reflection of the experience I wanted to create for you. It’s about making shopping easy, quick, and enjoyable, no matter where you are or what device you’re on. By focusing on clean design, speed, and responsiveness, I’ve built an e-commerce platform that puts you, the shopper, first. I’m really excited about how this turned out, and I hope you enjoy using it as much as I enjoyed creating it!"} stacks={"Stacks used :JavaScript, Html, Css"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={"https://github.com/Yungflashh/Nike"} liveSite={"https://nike-khaki-omega.vercel.app/"}/>
 
