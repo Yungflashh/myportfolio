@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 
 const TypewriterEffect = () => {
-    const texts = ["Front-End Developer", "Back-end Developer", "Full-Stack Developer", "Cinematographer", "Photographer", "Drone Pilot"];
+    const texts = ["Front-End Developer", "Back-end Developer", "Full-Stack Developer", "Cinematographer", "Software-Developer","Photographer", "Drone Pilot"];
     const [displayedText, setDisplayedText] = useState('');
   const [textIndex, setTextIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
