@@ -19,7 +19,7 @@ const Works = () => {
 
                 </div>
                 <div>
-                    <WorksCard image={giftPixel} headerText={"VendorSpot"} desc={"GiftPixel is a website that specializes in enhancing the gift-giving experience through innovative technology solutions. They offer a platform that enables users to create personalized gift messages, which can be delivered to recipients via various channels, including email and vendor-specific applications. This approach allows gift givers to add a personal touch to their presents, making the gifting process more meaningful and engaging"} stacks={"Stacks used :Nodejs, ExpressJs, MongoDb, React, styled-components, tailwind, javascript, Html, Css"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={"https://github.com/Yungflashh/giftpixel.git"} liveSite={"https://giftpixel.vercel.app/"}/>
+                    <WorksCard image={giftPixel} headerText={"GiftPixel"} desc={"GiftPixel is a website that specializes in enhancing the gift-giving experience through innovative technology solutions. They offer a platform that enables users to create personalized gift messages, which can be delivered to recipients via various channels, including email and vendor-specific applications. This approach allows gift givers to add a personal touch to their presents, making the gifting process more meaningful and engaging"} stacks={"Stacks used :Nodejs, ExpressJs, MongoDb, React, styled-components, tailwind, javascript, Html, Css"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={"https://github.com/Yungflashh/giftpixel.git"} liveSite={"https://giftpixel.vercel.app/"}/>
 
                 </div>
                 <div>
