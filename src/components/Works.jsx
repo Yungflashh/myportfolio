@@ -46,12 +46,6 @@ const Works = () => {
 
 
                 <div>
-                    <WorksCard image={country} headerText={"Country API"} desc={"I built a website that allows you to quickly access detailed information about any country, using a powerful API to fetch up-to-date data. Whether you’re curious about a country’s population, capital, languages, or flag, this site has it all."} stacks={"Stacks used : API, JavaScript, Html, Css"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={"https://github.com/Yungflashh/countryAPI"} liveSite={"https://country-api-lac-mu.vercel.app/"}/>
-
-                </div>
-
-
-                <div>
                     <WorksCard image={synTech} headerText={"SynTech"} desc={"I built a website that allows you to quickly access detailed information about any country, using a powerful API to fetch up-to-date data. Whether you’re curious about a country’s population, capital, languages, or flag, this site has it all."} stacks={"Stacks used : JavaScript, Html, Css"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={"https://github.com/Yungflashh/synTech"} liveSite={"https://syn-tech-iota.vercel.app/"}/>
 
                 </div>
