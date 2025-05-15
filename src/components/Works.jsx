@@ -6,6 +6,7 @@ import giftPixel from "../assets/giftpixel.png"
 import wordGame from "../assets/wordGame.png"
 import country from "../assets/country.png"
 import synTech from "../assets/syntech.png"
+import vendorImg from "../assets/vendorImg.png"
 
 const Works = () => {
   return (
@@ -14,7 +15,11 @@ const Works = () => {
 
                 
                 <div>
-                    <WorksCard image={giftPixel} headerText={"Gift Pixel"} desc={"GiftPixel is a website that specializes in enhancing the gift-giving experience through innovative technology solutions. They offer a platform that enables users to create personalized gift messages, which can be delivered to recipients via various channels, including email and vendor-specific applications. This approach allows gift givers to add a personal touch to their presents, making the gifting process more meaningful and engaging"} stacks={"Stacks used :Nodejs, ExpressJs, MongoDb, React, styled-components, tailwind, javascript, Html, Css"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={"https://github.com/Yungflashh/giftpixel.git"} liveSite={"https://giftpixel.vercel.app/"}/>
+                    <WorksCard image={vendorImg} headerText={"VendorSpot"} desc={"VendorSpot is a centralized platform designed to connect businesses with trusted vendors across various industries. Whether you're sourcing products, services, or partnerships, VendorSpot simplifies the process by offering curated listings, reviews, and tools that help streamline vendor discovery and management."} stacks={"Stacks used :Nodejs, ExpressJs, MongoDb, NextJs, Tailwind, javascript, TypeScript, prisma"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={""} liveSite={"https://www.vendorspotng.com"}/>
+
+                </div>
+                <div>
+                    <WorksCard image={giftPixel} headerText={"VendorSpot"} desc={"GiftPixel is a website that specializes in enhancing the gift-giving experience through innovative technology solutions. They offer a platform that enables users to create personalized gift messages, which can be delivered to recipients via various channels, including email and vendor-specific applications. This approach allows gift givers to add a personal touch to their presents, making the gifting process more meaningful and engaging"} stacks={"Stacks used :Nodejs, ExpressJs, MongoDb, React, styled-components, tailwind, javascript, Html, Css"} btnTitle={"View Code"} btnTitle2={"Go Live"} codeBase={"https://github.com/Yungflashh/giftpixel.git"} liveSite={"https://giftpixel.vercel.app/"}/>
 
                 </div>
                 <div>
