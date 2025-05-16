@@ -1,30 +1,52 @@
 import "../../styles/navBar.css";
-import { useState, useContext } from "react";
-import { myValue } from "../../context/NavState";
+import { motion, AnimatePresence } from "framer-motion";
 
-const NavBar = () => {
-  const boolean = useContext(myValue);
-  const [navBar, setNavBar] = useState(boolean);
+const NavBar = ({ isVisible, onClose }) => {
+  const navItems = [
+    { name: "About Me", id: "about" },
+    { name: "Services", id: "services" },
+    { name: "My Works", id: "myWorks" },
+    { name: "Contact Me", id: "contact" },
+  ];
 
-  function toggleBar() {
-    setNavBar((prevNavBar) => {
-      const newNavBar = !prevNavBar;
-      console.log(newNavBar); 
-      return newNavBar;
-    });
-  }
+  const handleClick = (id) => {
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: "smooth" });
+    onClose();
+  };
 
   return (
-    <div>
-      <nav className={`navbar ${navBar ? "active" : ""}`}>
-        <ul className="nav-list">
-          <li className="nav-item" onClick={toggleBar}><a href="#about">About Me</a></li>
-          <li className="nav-item" onClick={toggleBar}><a href="#services">Services</a></li>
-          <li className="nav-item" onClick={toggleBar}><a href="#myWorks">My Works</a></li>
-          <li className="nav-item" onClick={toggleBar}><a href="#contact">Contact Me</a></li>
-        </ul>
-      </nav>
-    </div>
+    <AnimatePresence>
+      {isVisible && (
+        <>
+          {/* Overlay */}
+          <motion.div
+            className="nav-overlay"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 0.5 }}
+            exit={{ opacity: 0 }}
+            onClick={onClose}
+          />
+
+          {/* Sliding Nav */}
+          <motion.nav
+            className="navbar"
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "spring", stiffness: 200, damping: 25 }}
+          >
+            <ul className="nav-list">
+              {navItems.map((item) => (
+                <li className="nav-item" key={item.id}>
+                  <a onClick={() => handleClick(item.id)}>{item.name}</a>
+                </li>
+              ))}
+            </ul>
+          </motion.nav>
+        </>
+      )}
+    </AnimatePresence>
   );
 };
 

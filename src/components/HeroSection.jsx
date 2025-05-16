@@ -9,7 +9,7 @@ import { FaGithub, FaLinkedin, FaDownload } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 import oval from "../assets/oval.svg";
 
-// Register the ScrollTrigger plugin with GSAP
+// Register GSAP plugin
 gsap.registerPlugin(ScrollTrigger);
 
 const HeroSection = () => {
@@ -17,7 +17,6 @@ const HeroSection = () => {
 
   // Scroll-triggered animations
   useEffect(() => {
-    // Text animations (fade in as you scroll)
     gsap.fromTo(
       ".HeroText h2",
       { opacity: 0, y: -50 },
@@ -28,7 +27,7 @@ const HeroSection = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: ".HeroText h2",
-          start: "top 80%", // Start when 80% of the element is visible
+          start: "top 80%",
           end: "top 30%",
           scrub: true,
         },
@@ -53,7 +52,7 @@ const HeroSection = () => {
     );
 
     gsap.fromTo(
-      ".TypewriterEffect", // Typewriter effect container
+      ".TypewriterEffect",
       { opacity: 0, y: -50 },
       {
         opacity: 1,
@@ -94,7 +93,7 @@ const HeroSection = () => {
         y: 0,
         duration: 1,
         ease: "power3.out",
-        stagger: 0.2, // Delay each icon animation
+        stagger: 0.2,
         scrollTrigger: {
           trigger: ".icons",
           start: "top 80%",
@@ -105,25 +104,25 @@ const HeroSection = () => {
     );
 
     gsap.fromTo(
-      ".imageDiv",
-      { opacity: 0, y: 100 },
+      "#myImg",
+      { opacity: 0, y: 100, scale: 0.8, rotate: -10 },
       {
         opacity: 1,
         y: 0,
+        scale: 1,
+        rotate: 0,
         duration: 1.5,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: ".imageDiv",
+          trigger: "#myImg",
           start: "top 80%",
           end: "top 30%",
           scrub: true,
         },
       }
     );
-
   }, []);
 
-  // Handle CV download
   const handleDownload = () => {
     setIsLoading(true);
     setTimeout(() => {
