@@ -2,7 +2,7 @@ import "../styles/Card.css"
 
 // 
 
-const Card = ({icon, title, text}) => {
+const Card = ({icon, title, }) => {
   return (
     <div className="card">
         <div className="icon">
