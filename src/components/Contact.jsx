@@ -4,7 +4,8 @@ import { IoShieldCheckmark } from "react-icons/io5";
 const Contact = () => {
   return (
 
-      
+
+    sxghb
     <>
     <h2>Let`s talk about your Next Project</h2>
     <div className="contactContainer" id="contact">
